@@ -15,29 +15,33 @@ public class weekTwoAssignmentThree : MonoBehaviour
 	{
 		if (Input.GetKeyDown (KeyCode.UpArrow))
 		{
+			int speed = 60;
 			Vector3 position = this.transform.position;
-			position.z++;
+			position.z+= speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 		
 		if (Input.GetKeyDown (KeyCode.DownArrow))
 		{
+			int speed = 60;
 			Vector3 position = this.transform.position;
-			position.z--;
+			position.z-= speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 
 		if (Input.GetKeyDown (KeyCode.RightArrow))
 		{
+			int speed = 60;
 			Vector3 position = this.transform.position;
-			position.x++;
+			position.x+= speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 
 		if (Input.GetKeyDown (KeyCode.LeftArrow))
 		{
+			int speed = 60;
 			Vector3 position = this.transform.position;
-			position.x--;
+			position.x- speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 	}
