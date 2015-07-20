@@ -13,36 +13,56 @@ public class weekTwoAssignmentThree : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.UpArrow))
+		if (Input.GetKey (KeyCode.UpArrow))
 		{
-			int speed = 60;
+			int speed = 100;
 			Vector3 position = this.transform.position;
-			position.z+= speed * Time.deltaTime;
+			position.z += speed * Time.deltaTime;
 			this.transform.position = position;
+			if (position.z > 12)
+			{
+				position.z -= speed * Time.deltaTime;
+				this.transform.position = position;
+			}
 		}
 		
-		if (Input.GetKeyDown (KeyCode.DownArrow))
+		if (Input.GetKey (KeyCode.DownArrow))
 		{
-			int speed = 60;
+			int speed = 100;
 			Vector3 position = this.transform.position;
-			position.z-= speed * Time.deltaTime;
+			position.z -= speed * Time.deltaTime;
 			this.transform.position = position;
+			if (position.z < -8)
+			{
+				position.z += speed * Time.deltaTime;
+				this.transform.position = position;
+			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.RightArrow))
+		if (Input.GetKey (KeyCode.RightArrow))
 		{
-			int speed = 60;
+			int speed = 100;
 			Vector3 position = this.transform.position;
-			position.x+= speed * Time.deltaTime;
+			position.x += speed * Time.deltaTime;
 			this.transform.position = position;
+			if (position.x > 7)
+			{
+				position.x -= speed * Time.deltaTime;
+				this.transform.position = position;
+			}
 		}
-
-		if (Input.GetKeyDown (KeyCode.LeftArrow))
+		
+		if (Input.GetKey (KeyCode.LeftArrow))
 		{
-			int speed = 60;
+			int speed = 100;
 			Vector3 position = this.transform.position;
-			position.x- speed * Time.deltaTime;
+			position.x -= speed * Time.deltaTime;
 			this.transform.position = position;
+			if (position.x < -7)
+			{
+				position.x += speed * Time.deltaTime;
+				this.transform.position = position;
+			}
 		}
 	}
 }
