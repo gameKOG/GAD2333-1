@@ -1,0 +1,19 @@
+using UnityEngine;
+using System.Collections;
+
+public class weekTwoAssignmentTwo : MonoBehaviour
+{
+	// Use this for initialization
+	void Start ()
+	{
+		string sentence = ("\"Possesses\" possesses a great number of s's.");
+		int result = sentence.Length - sentence.Replace("s", "").Length;
+		print ("'\"Possesses\" possesses a great number of s's.' contains " + result + " 's' characters");
+	}
+	
+	// Update is called once per frame
+	void Update ()
+	{
+	
+	}
+}
