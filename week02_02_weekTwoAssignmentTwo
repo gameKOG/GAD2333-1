@@ -7,7 +7,7 @@ public class weekTwoAssignmentTwo : MonoBehaviour
 	void Start ()
 	{
 		string sentence = ("\"Possesses\" possesses a great number of s's.");
-		int result = sentence.Length - sentence.Replace("s", "").Length;
+		int result = sentence.Length - sentence.Replace("s", "").Length; //Very sly. I tip my hat.
 		print ("'\"Possesses\" possesses a great number of s's.' contains " + result + " 's' characters");
 	}
 	
