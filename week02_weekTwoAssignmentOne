@@ -1,0 +1,31 @@
+using UnityEngine;
+using System.Collections;
+
+public class weekTwoAssignmentOne : MonoBehaviour
+{
+	public string playerName = ("");
+
+	// Use this for initialization
+	void Start ()
+	{
+	}
+
+	public void Main()
+	{
+		SayHello(playerName);
+		SayGoodbye();
+	}
+
+	public void SayHello(string pName)
+	{
+		print ("Hello " + pName + "!");
+	}
+	public void SayGoodbye()
+	{
+		print ("Goodbye!");
+	}
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
