@@ -3,7 +3,7 @@ using System.Collections;
 
 public class weekTwoAssignmentOne : MonoBehaviour
 {
-	public string playerName = ("");
+	public string playerName = ("");		//The text I enter for playerName never gets used.
 
 	// Use this for initialization
 	void Start ()
